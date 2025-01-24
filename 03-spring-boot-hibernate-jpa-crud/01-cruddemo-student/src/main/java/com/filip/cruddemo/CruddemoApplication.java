@@ -21,15 +21,15 @@ public class CruddemoApplication {
 
 		return runner -> {
 			createMultipleStudents(studentDAO);
-			readAllStudents(studentDAO);
-			System.out.println("Reading by last name:");
-			readAllStudentsByLastName(studentDAO);
+//			readAllStudents(studentDAO);
+//			System.out.println("Reading by last name:");
+//			readAllStudentsByLastName(studentDAO);
 
-			updateStudent(studentDAO);
+//			updateStudent(studentDAO);
 
 //			deleteStudent(studentDAO);
 
-			deleteAllStudents(studentDAO);
+//			deleteAllStudents(studentDAO);
 		};
 	}
 
