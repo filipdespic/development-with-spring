@@ -1,6 +1,6 @@
-package com.filipdespic.springboot.cruddemo.entity;
+package com.filipdespic.springboot.cruddemo.dao;
 
-import com.filipdespic.springboot.cruddemo.EmployeeDAO;
+import com.filipdespic.springboot.cruddemo.entity.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
