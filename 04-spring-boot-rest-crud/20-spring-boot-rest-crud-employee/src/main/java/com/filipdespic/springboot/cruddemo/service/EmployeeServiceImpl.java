@@ -2,6 +2,7 @@ package com.filipdespic.springboot.cruddemo.service;
 
 import com.filipdespic.springboot.cruddemo.dao.EmployeeDAO;
 import com.filipdespic.springboot.cruddemo.entity.Employee;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,5 +19,22 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> findAll() {
         return employeeDAO.findAll();
+    }
+
+    @Override
+    public Employee findById(int id) {
+        return employeeDAO.findById(id);
+    }
+
+    @Transactional
+    @Override
+    public Employee save(Employee employee) {
+        return employeeDAO.save(employee);
+    }
+
+    @Transactional
+    @Override
+    public void deleteById(int id) {
+        employeeDAO.deleteById(id);
     }
 }
